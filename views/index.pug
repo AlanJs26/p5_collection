@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    title= 'p5 projects'
+    style
+      include public/style.css
+    link(rel="icon", href="https://p5js.org/assets/img/favicon.ico")
+  body
+    ul(class='sidebar')
+      each val in files
+        li #{val}
+    main
+      iframe(id='iframe', frameborder=0)
+    script(defer)
+      include public/app.js

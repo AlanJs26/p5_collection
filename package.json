@@ -1,0 +1,20 @@
+{
+  "name": "p5_collection",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "my collection of p5 sketches",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nodemon index.js"
+  },
+  "author": "Alan José",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
