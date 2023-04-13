@@ -4,7 +4,7 @@ import path from 'path'
 
 function getDirectories(source){
   return readdirSync(source, { withFileTypes: true })
-          .filter(dirent => dirent.isDirectory() && !exclude_folders.includes(dirent.name) )
+          .filter(dirent => dirent.isDirectory() && !exclude_folders.includes(dirent.name) && !dirent.name.startsWith('.') )
           .map(dirent => dirent.name)
 }
 
