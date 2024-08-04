@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "ES2015",
+    "noImplicitAny": true,
+    // "outFile": "./build/build.js",
+    "outDir": "build",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "rootDir": "./sketch",
+    "sourceMap": true,
+    "target": "es5",
+    "lib": ["es2017", "dom"],
+    "moduleResolution": "node"
+  },
+  "include": [
+    "./sketch"
+  ]
+}
